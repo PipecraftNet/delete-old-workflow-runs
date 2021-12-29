@@ -22,6 +22,6 @@ jobs:
           # event: push
           # event: completed
           # maximum-workflow-runs-to-keep: 0
-          what-if: 0
+          what-if: ""
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
