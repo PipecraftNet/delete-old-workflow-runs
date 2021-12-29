@@ -9,7 +9,7 @@ jobs:
     name: A job to delete workflow runs
     steps:
       - name: Delete workflow runs
-        uses: MajorScruffy/delete-workflow-runs
+        uses: MajorScruffy/delete-workflow-runs@main
         id: delete-workflow-runs
         with:
           repository: PipecraftNet/v2hot.github.io
