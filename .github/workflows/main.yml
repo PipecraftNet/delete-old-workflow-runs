@@ -9,7 +9,7 @@ jobs:
     name: A job to delete workflow runs
     steps:
       - name: Delete workflow runs
-        uses: MajorScruffy/delete-workflow-runs@main
+        uses: MajorScruffy/delete-workflow-runs@v0.1.0
         id: delete-workflow-runs
         with:
           repository: PipecraftNet/v2hot.github.io
@@ -22,6 +22,6 @@ jobs:
           # event: push
           # event: completed
           # maximum-workflow-runs-to-keep: 0
-          # what-if: true
+          what-if: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
